@@ -17,11 +17,16 @@ ResNet is a deep convolutional neural network architecture that was introduced b
 ### Key Concepts
 - **Residual Block**: The fundamental building block of ResNet. It consists of two or more convolutional layers with a shortcut connection that bypasses one or more layers. The output of the residual block is the sum of the input and the output of the convolutional layers.
 
-  ![Residual Block Diagram](images/residual_building_blocks.png)
+  ![Residual Block Diagram](images/resnets_building_blocks.png)
 
 - **Skip Connection**: This allows the input to be added directly to the output of the convolutional layers, enabling the network to learn an identity function. If the learned residual is close to zero, the network can easily fit the identity function, which helps in training deeper architectures.
 
+    ![Skip Connections](images/skip.png)
+
 - **Bottleneck Architecture**: A variation of the residual block that reduces the number of parameters by first projecting the input to a lower-dimensional space, performing the main operations, and then projecting back to a higher-dimensional space.
+
+   <img src="images/bottleneck.png" alt="BottleNeck Architecture" width="400" height="400"/>
+
 
 ### Advantages of ResNet
 - **Improved Training of Deep Networks**: The skip connections prevent the gradient from becoming too small, allowing deeper networks to be trained effectively.
