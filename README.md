@@ -58,7 +58,7 @@ To set up the project, follow these steps:
 
 2. **Activating the Environment:**
    ```bash
-   gconda env create -f environment.yml
+   conda env create -f environment.yml
    conda activate resnet-env
    ```
 
